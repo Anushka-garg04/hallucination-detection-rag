@@ -2,7 +2,16 @@
 
 End-to-end working prototype: **RAG pipeline** + **sentence-level verification** (DeBERTa NLI + heuristics) + **citations** + **Verification Percentage** (source credibility).
 
-## Quick start
+## Deploy on Streamlit Community Cloud (free)
+
+1. Go to https://share.streamlit.io → **Continue with GitHub** → authorize Streamlit.
+2. Click **Create app** → choose repo `Anushka-garg04/hallucination-detection-rag`
+   - Branch: `main`
+   - Main file path: `app.py` (set under *Advanced settings* if not pre-filled)
+3. Click **Deploy**. First build installs dependencies (5–10 min); the first
+   question you ask downloads the models (~30–60 s) — both are cached afterwards.
+
+## Quick start (local)
 
 ```bat
 pip install -r requirements.txt

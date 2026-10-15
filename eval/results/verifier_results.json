@@ -1,0 +1,181 @@
+{
+ "benchmark_counts": {
+  "Supported": 50,
+  "Contradicted": 34,
+  "Unsupported": 50
+ },
+ "perturbations": {
+  "antonym": 7,
+  "negation": 25,
+  "number": 1,
+  "year": 1
+ },
+ "modes": {
+  "nli_sent": {
+   "acc_3class": 0.8955,
+   "macro_f1_3class": 0.8888,
+   "precision_3class_macro": 0.9028,
+   "recall_3class_macro": 0.9067,
+   "per_class_f1": {
+    "Supported": 1.0,
+    "Contradicted": 0.8293,
+    "Unsupported": 0.8372
+   },
+   "per_class_recall": {
+    "Supported": 1.0,
+    "Contradicted": 1.0,
+    "Unsupported": 0.72
+   },
+   "binary_precision": 1.0,
+   "binary_recall": 1.0,
+   "binary_f1": 1.0,
+   "binary_accuracy": 1.0,
+   "confusion_matrix": [
+    [
+     50,
+     0,
+     0
+    ],
+    [
+     0,
+     34,
+     0
+    ],
+    [
+     0,
+     14,
+     36
+    ]
+   ],
+   "auroc": 1.0
+  },
+  "nli_chunk": {
+   "acc_3class": 0.6716,
+   "macro_f1_3class": 0.6725,
+   "precision_3class_macro": 0.7408,
+   "recall_3class_macro": 0.7004,
+   "per_class_f1": {
+    "Supported": 0.5634,
+    "Contradicted": 0.8101,
+    "Unsupported": 0.6441
+   },
+   "per_class_recall": {
+    "Supported": 0.4,
+    "Contradicted": 0.9412,
+    "Unsupported": 0.76
+   },
+   "binary_precision": 0.7345,
+   "binary_recall": 0.9881,
+   "binary_f1": 0.8426,
+   "binary_accuracy": 0.7687,
+   "confusion_matrix": [
+    [
+     20,
+     2,
+     28
+    ],
+    [
+     0,
+     32,
+     2
+    ],
+    [
+     1,
+     11,
+     38
+    ]
+   ],
+   "auroc": 0.8683
+  },
+  "heuristics": {
+   "acc_3class": 0.597,
+   "macro_f1_3class": 0.4665,
+   "precision_3class_macro": 0.4936,
+   "recall_3class_macro": 0.5333,
+   "per_class_f1": {
+    "Supported": 0.6494,
+    "Contradicted": 0.0,
+    "Unsupported": 0.75
+   },
+   "per_class_recall": {
+    "Supported": 1.0,
+    "Contradicted": 0.0,
+    "Unsupported": 0.6
+   },
+   "binary_precision": 1.0,
+   "binary_recall": 0.3571,
+   "binary_f1": 0.5263,
+   "binary_accuracy": 0.597,
+   "confusion_matrix": [
+    [
+     50,
+     0,
+     0
+    ],
+    [
+     34,
+     0,
+     0
+    ],
+    [
+     20,
+     0,
+     30
+    ]
+   ],
+   "auroc": 0.8199
+  },
+  "combined": {
+   "acc_3class": 0.7985,
+   "macro_f1_3class": 0.7815,
+   "precision_3class_macro": 0.834,
+   "recall_3class_macro": 0.82,
+   "per_class_f1": {
+    "Supported": 0.885,
+    "Contradicted": 0.8293,
+    "Unsupported": 0.6301
+   },
+   "per_class_recall": {
+    "Supported": 1.0,
+    "Contradicted": 1.0,
+    "Unsupported": 0.46
+   },
+   "binary_precision": 1.0,
+   "binary_recall": 0.8452,
+   "binary_f1": 0.9161,
+   "binary_accuracy": 0.903,
+   "confusion_matrix": [
+    [
+     50,
+     0,
+     0
+    ],
+    [
+     0,
+     34,
+     0
+    ],
+    [
+     13,
+     14,
+     23
+    ]
+   ],
+   "auroc": 1.0
+  }
+ },
+ "latency": {
+  "nli_sentence_ms": 1492.6,
+  "nli_chunk_ms": 2526.9,
+  "heuristics_ms": 269.6,
+  "combined_ms": 1762.2,
+  "n_sentences": 134,
+  "hardware": "CPU (PyTorch 2.8, no GPU)"
+ },
+ "gold_distribution": {
+  "Supported": 50,
+  "Contradicted": 34,
+  "Unsupported": 50
+ },
+ "hallucinated_rate": 0.6269
+}

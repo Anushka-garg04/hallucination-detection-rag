@@ -1,0 +1,253 @@
+{
+ "queries": [
+  "How does retrieval-augmented generation reduce hallucination?",
+  "How is NLI used to check factual consistency of summaries?",
+  "What datasets are used to evaluate hallucination in LLMs?",
+  "What accuracy did the deep learning system achieve on chest X-ray screening?",
+  "What is SelfCheckGPT and how does it detect hallucinations?",
+  "Which corpus provides span-level hallucination annotations for RAG responses?"
+ ],
+ "levels": [
+  "none",
+  "low",
+  "high"
+ ],
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "per_level": {
+  "none": {
+   "n_sentences": 90,
+   "n_hallucinated": 0,
+   "nli": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "accuracy": 1.0,
+    "fpr": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "tn": 90
+   },
+   "heuristics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "accuracy": 1.0,
+    "fpr": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "tn": 90
+   },
+   "combined": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "accuracy": 1.0,
+    "fpr": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 0,
+    "tn": 90
+   },
+   "hallucination_score_mean": 0.0,
+   "hallucination_score_std": 0.0
+  },
+  "low": {
+   "n_sentences": 120,
+   "n_hallucinated": 30,
+   "nli": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "accuracy": 1.0,
+    "fpr": 0.0,
+    "tp": 30,
+    "fp": 0,
+    "fn": 0,
+    "tn": 90
+   },
+   "heuristics": {
+    "precision": 1.0,
+    "recall": 0.7667,
+    "f1": 0.8679,
+    "accuracy": 0.9417,
+    "fpr": 0.0,
+    "tp": 23,
+    "fp": 0,
+    "fn": 7,
+    "tn": 90
+   },
+   "combined": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "accuracy": 1.0,
+    "fpr": 0.0,
+    "tp": 30,
+    "fp": 0,
+    "fn": 0,
+    "tn": 90
+   },
+   "hallucination_score_mean": 17.1,
+   "hallucination_score_std": 6.0
+  },
+  "high": {
+   "n_sentences": 150,
+   "n_hallucinated": 60,
+   "nli": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "accuracy": 1.0,
+    "fpr": 0.0,
+    "tp": 60,
+    "fp": 0,
+    "fn": 0,
+    "tn": 90
+   },
+   "heuristics": {
+    "precision": 1.0,
+    "recall": 0.7667,
+    "f1": 0.8679,
+    "accuracy": 0.9067,
+    "fpr": 0.0,
+    "tp": 46,
+    "fp": 0,
+    "fn": 14,
+    "tn": 90
+   },
+   "combined": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "accuracy": 1.0,
+    "fpr": 0.0,
+    "tp": 60,
+    "fp": 0,
+    "fn": 0,
+    "tn": 90
+   },
+   "hallucination_score_mean": 27.3,
+   "hallucination_score_std": 4.4
+  }
+ },
+ "overall": {
+  "nli": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "accuracy": 1.0,
+   "fpr": 0.0,
+   "tp": 90,
+   "fp": 0,
+   "fn": 0,
+   "tn": 270
+  },
+  "heuristics": {
+   "precision": 1.0,
+   "recall": 0.7667,
+   "f1": 0.8679,
+   "accuracy": 0.9417,
+   "fpr": 0.0,
+   "tp": 69,
+   "fp": 0,
+   "fn": 21,
+   "tn": 270
+  },
+  "combined": {
+   "precision": 1.0,
+   "recall": 1.0,
+   "f1": 1.0,
+   "accuracy": 1.0,
+   "fpr": 0.0,
+   "tp": 90,
+   "fp": 0,
+   "fn": 0,
+   "tn": 270
+  }
+ },
+ "citations": {
+  "n_supported": 270,
+  "supported_with_any_citation": 1.0,
+  "supported_top1_correct": 0.8889,
+  "supported_topk_correct": 0.8889,
+  "n_injected": 90,
+  "injected_with_citation": 0.4667
+ },
+ "verification_percentage": {
+  "How does retrieval-augmented generation reduce hallucination?": {
+   "verification_percentage": 33.3,
+   "credible_sources": 1,
+   "total_sources": 3,
+   "titles": [
+    "HHEM: The Hughes Hallucination Evaluation Model for Production RAG Systems",
+    "RAGTruth: A Span-Level Corpus for Hallucination Detection in Retrieval-Augmented Generation",
+    "SelfCheckGPT: Reference-Free Detection of Hallucinations via Sampling Consistency"
+   ]
+  },
+  "How is NLI used to check factual consistency of summaries?": {
+   "verification_percentage": 33.3,
+   "credible_sources": 1,
+   "total_sources": 3,
+   "titles": [
+    "SummaC: Sentence-Level Factual Consistency Detection using Natural Language Inference",
+    "SelfCheckGPT: Reference-Free Detection of Hallucinations via Sampling Consistency",
+    "FActScore: Fine-Grained Atomic Fact Evaluation of Generated Biographies"
+   ]
+  },
+  "What datasets are used to evaluate hallucination in LLMs?": {
+   "verification_percentage": 33.3,
+   "credible_sources": 1,
+   "total_sources": 3,
+   "titles": [
+    "HHEM: The Hughes Hallucination Evaluation Model for Production RAG Systems",
+    "RAGTruth: A Span-Level Corpus for Hallucination Detection in Retrieval-Augmented Generation",
+    "SelfCheckGPT: Reference-Free Detection of Hallucinations via Sampling Consistency"
+   ]
+  },
+  "What accuracy did the deep learning system achieve on chest X-ray screening?": {
+   "verification_percentage": 33.3,
+   "credible_sources": 1,
+   "total_sources": 3,
+   "titles": [
+    "Deep Learning for Automated Diagnosis in Medical Imaging: A Clinical Review",
+    "HHEM: The Hughes Hallucination Evaluation Model for Production RAG Systems",
+    "RAGTruth: A Span-Level Corpus for Hallucination Detection in Retrieval-Augmented Generation"
+   ]
+  },
+  "What is SelfCheckGPT and how does it detect hallucinations?": {
+   "verification_percentage": 0.0,
+   "credible_sources": 0,
+   "total_sources": 3,
+   "titles": [
+    "SelfCheckGPT: Reference-Free Detection of Hallucinations via Sampling Consistency",
+    "HHEM: The Hughes Hallucination Evaluation Model for Production RAG Systems",
+    "HaluEval: A Large-Scale Benchmark for Evaluating Hallucinations in Large Language Models"
+   ]
+  },
+  "Which corpus provides span-level hallucination annotations for RAG responses?": {
+   "verification_percentage": 33.3,
+   "credible_sources": 1,
+   "total_sources": 3,
+   "titles": [
+    "RAGTruth: A Span-Level Corpus for Hallucination Detection in Retrieval-Augmented Generation",
+    "HHEM: The Hughes Hallucination Evaluation Model for Production RAG Systems",
+    "HaluEval: A Large-Scale Benchmark for Evaluating Hallucinations in Large Language Models"
+   ]
+  }
+ },
+ "latency": {
+  "mean_s_per_answer": 11.1,
+  "median_s_per_answer": 10.89,
+  "n_runs": 90,
+  "hardware": "CPU (no GPU)"
+ },
+ "n_rows": 360
+}

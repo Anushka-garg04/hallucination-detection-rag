@@ -1,0 +1,46 @@
+{
+ "per_level": {
+  "none": {
+   "nli": {
+    "mean": 0.0,
+    "std": 0.0
+   },
+   "heuristics": {
+    "mean": 0.0,
+    "std": 0.0
+   },
+   "combined": {
+    "mean": 0.0,
+    "std": 0.0
+   }
+  },
+  "low": {
+   "nli": {
+    "mean": 17.1,
+    "std": 6.0
+   },
+   "heuristics": {
+    "mean": 9.6,
+    "std": 5.3
+   },
+   "combined": {
+    "mean": 17.1,
+    "std": 6.0
+   }
+  },
+  "high": {
+   "nli": {
+    "mean": 27.3,
+    "std": 4.4
+   },
+   "heuristics": {
+    "mean": 15.3,
+    "std": 5.0
+   },
+   "combined": {
+    "mean": 27.3,
+    "std": 4.4
+   }
+  }
+ }
+}

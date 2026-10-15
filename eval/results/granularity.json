@@ -1,0 +1,14 @@
+{
+ "Supported": {
+  "metric": "entailment",
+  "n": 50,
+  "chunk_mean": 0.4184,
+  "sentence_mean": 0.9899
+ },
+ "Contradicted": {
+  "metric": "contradiction",
+  "n": 34,
+  "chunk_mean": 0.9544,
+  "sentence_mean": 0.9965
+ }
+}

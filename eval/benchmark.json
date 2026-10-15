@@ -1,0 +1,2081 @@
+{
+ "seed": 13,
+ "n_distractors": 3,
+ "counts": {
+  "Supported": 50,
+  "Contradicted": 34,
+  "Unsupported": 50
+ },
+ "perturbations": {
+  "antonym": 7,
+  "negation": 25,
+  "number": 1,
+  "year": 1
+ },
+ "samples": [
+  {
+   "id": "sup_0",
+   "label": "Supported",
+   "sentence": "We evaluated several detection strategies on HaluEval, including direct prompting of a judge model, embedding similarity against the source document, and fine-tuned NLI classifiers.",
+   "evidence": [
+    "doc_halueval#c1",
+    "doc_hhem#c1",
+    "doc_summac#c1",
+    "doc_ragtruth#c2"
+   ],
+   "gold_chunk": "doc_halueval#c1",
+   "doc_id": "doc_halueval",
+   "perturbation": null
+  },
+  {
+   "id": "sup_1",
+   "label": "Supported",
+   "sentence": "If a statement in the target response is factually correct, it tends to reappear across most samples; if it is hallucinated, it is contradicted or omitted in the other samples.",
+   "evidence": [
+    "doc_selfcheck#c0",
+    "doc_summac#c2",
+    "doc_summac#c1",
+    "doc_hhem#c0"
+   ],
+   "gold_chunk": "doc_selfcheck#c0",
+   "doc_id": "doc_selfcheck",
+   "perturbation": null
+  },
+  {
+   "id": "sup_2",
+   "label": "Supported",
+   "sentence": "We aggregate these pairwise scores into a single document-level consistency score and show that it correlates strongly with human judgments of factual consistency.",
+   "evidence": [
+    "doc_summac#c1",
+    "doc_halueval#c1",
+    "doc_selfcheck#c1",
+    "doc_factscore#c1"
+   ],
+   "gold_chunk": "doc_summac#c1",
+   "doc_id": "doc_summac",
+   "perturbation": null
+  },
+  {
+   "id": "sup_3",
+   "label": "Supported",
+   "sentence": "The model scores each response independently of the question, so it measures consistency with the document rather than answer relevance.",
+   "evidence": [
+    "doc_hhem#c1",
+    "doc_ragtruth#c1",
+    "doc_medical#c0",
+    "doc_selfcheck#c2"
+   ],
+   "gold_chunk": "doc_hhem#c1",
+   "doc_id": "doc_hhem",
+   "perturbation": null
+  },
+  {
+   "id": "sup_4",
+   "label": "Supported",
+   "sentence": "Each response is paired with the retrieval context that was supplied to the model, so a detector can learn to distinguish content that is supported by the context from content that is merely fluent.",
+   "evidence": [
+    "doc_ragtruth#c0",
+    "doc_summac#c0",
+    "doc_hhem#c2",
+    "doc_factscore#c2"
+   ],
+   "gold_chunk": "doc_ragtruth#c0",
+   "doc_id": "doc_ragtruth",
+   "perturbation": null
+  },
+  {
+   "id": "sup_5",
+   "label": "Supported",
+   "sentence": "We observed that grounding generation in retrieved evidence reduces hallucination: the model states facts that appear in the source passages instead of inventing plausible but unsupported details.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_hhem#c2",
+    "doc_selfcheck#c1",
+    "doc_medical#c0"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null
+  },
+  {
+   "id": "sup_6",
+   "label": "Supported",
+   "sentence": "SelfCheckGPT achieves strong correlation with human hallucination annotations on the BioDomain and NarrativeQA evaluation sets.",
+   "evidence": [
+    "doc_selfcheck#c2",
+    "doc_ragtruth#c0",
+    "doc_summac#c2",
+    "doc_halueval#c1"
+   ],
+   "gold_chunk": "doc_selfcheck#c2",
+   "doc_id": "doc_selfcheck",
+   "perturbation": null
+  },
+  {
+   "id": "sup_7",
+   "label": "Supported",
+   "sentence": "The corpus was released in 2024 and is now widely used for training and evaluating sentence-level and span-level hallucination detectors.",
+   "evidence": [
+    "doc_ragtruth#c2",
+    "doc_summac#c0",
+    "doc_rag#c2",
+    "doc_factscore#c0"
+   ],
+   "gold_chunk": "doc_ragtruth#c2",
+   "doc_id": "doc_ragtruth",
+   "perturbation": null
+  },
+  {
+   "id": "sup_8",
+   "label": "Supported",
+   "sentence": "FActScore evaluates generation quality by decomposing a long-form response into a list of atomic facts, each expressing exactly one verifiable claim.",
+   "evidence": [
+    "doc_factscore#c0",
+    "doc_medical#c1",
+    "doc_halueval#c1",
+    "doc_selfcheck#c2"
+   ],
+   "gold_chunk": "doc_factscore#c0",
+   "doc_id": "doc_factscore",
+   "perturbation": null
+  },
+  {
+   "id": "sup_9",
+   "label": "Supported",
+   "sentence": "Our results show that judge models are inexpensive but over-confident, while fine-tuned classifiers give the best precision.",
+   "evidence": [
+    "doc_halueval#c1",
+    "doc_rag#c0",
+    "doc_factscore#c0",
+    "doc_rag#c1"
+   ],
+   "gold_chunk": "doc_halueval#c1",
+   "doc_id": "doc_halueval",
+   "perturbation": null
+  },
+  {
+   "id": "sup_10",
+   "label": "Supported",
+   "sentence": "All experiments described in this review received institutional ethics approval.",
+   "evidence": [
+    "doc_medical#c2",
+    "doc_ragtruth#c0",
+    "doc_summac#c0",
+    "doc_halueval#c2"
+   ],
+   "gold_chunk": "doc_medical#c2",
+   "doc_id": "doc_medical",
+   "perturbation": null
+  },
+  {
+   "id": "sup_11",
+   "label": "Supported",
+   "sentence": "SelfCheckGPT is a reference-free method for detecting hallucinations that does not require access to a knowledge base.",
+   "evidence": [
+    "doc_selfcheck#c0",
+    "doc_factscore#c1",
+    "doc_medical#c1",
+    "doc_ragtruth#c1"
+   ],
+   "gold_chunk": "doc_selfcheck#c0",
+   "doc_id": "doc_selfcheck",
+   "perturbation": null
+  },
+  {
+   "id": "sup_12",
+   "label": "Supported",
+   "sentence": "RAG was published in 2020 and has since become the standard architecture for grounded question answering systems.",
+   "evidence": [
+    "doc_rag#c2",
+    "doc_ragtruth#c2",
+    "doc_factscore#c1",
+    "doc_selfcheck#c2"
+   ],
+   "gold_chunk": "doc_rag#c2",
+   "doc_id": "doc_rag",
+   "perturbation": null
+  },
+  {
+   "id": "sup_13",
+   "label": "Supported",
+   "sentence": "The main failure mode we identified is retrieval failure: if the retriever returns irrelevant passages, the generator may ignore the context and fall back to parametric knowledge, which reintroduces factual errors.",
+   "evidence": [
+    "doc_rag#c2",
+    "doc_halueval#c2",
+    "doc_selfcheck#c0",
+    "doc_medical#c2"
+   ],
+   "gold_chunk": "doc_rag#c2",
+   "doc_id": "doc_rag",
+   "perturbation": null
+  },
+  {
+   "id": "sup_14",
+   "label": "Supported",
+   "sentence": "NLI models classify a premise-hypothesis pair into one of three labels: entailment, contradiction, or neutral.",
+   "evidence": [
+    "doc_summac#c0",
+    "doc_hhem#c0",
+    "doc_medical#c2",
+    "doc_ragtruth#c0"
+   ],
+   "gold_chunk": "doc_summac#c0",
+   "doc_id": "doc_summac",
+   "perturbation": null
+  },
+  {
+   "id": "sup_15",
+   "label": "Supported",
+   "sentence": "HaluEval is a benchmark dataset for measuring how often and in what ways large language models hallucinate.",
+   "evidence": [
+    "doc_halueval#c0",
+    "doc_medical#c0",
+    "doc_ragtruth#c0",
+    "doc_factscore#c2"
+   ],
+   "gold_chunk": "doc_halueval#c0",
+   "doc_id": "doc_halueval",
+   "perturbation": null
+  },
+  {
+   "id": "sup_16",
+   "label": "Supported",
+   "sentence": "Hallucination detection in RAG systems requires data at a finer granularity than whole-response labels.",
+   "evidence": [
+    "doc_ragtruth#c0",
+    "doc_summac#c2",
+    "doc_medical#c0",
+    "doc_rag#c1"
+   ],
+   "gold_chunk": "doc_ragtruth#c0",
+   "doc_id": "doc_ragtruth",
+   "perturbation": null
+  },
+  {
+   "id": "sup_17",
+   "label": "Supported",
+   "sentence": "Factual inconsistency in generated summaries is often local: a single sentence may contradict the source document while the rest of the summary is correct.",
+   "evidence": [
+    "doc_summac#c0",
+    "doc_hhem#c2",
+    "doc_rag#c1",
+    "doc_halueval#c1"
+   ],
+   "gold_chunk": "doc_summac#c0",
+   "doc_id": "doc_summac",
+   "perturbation": null
+  },
+  {
+   "id": "sup_18",
+   "label": "Supported",
+   "sentence": "In experiments on biographies of public figures, FActScore found that the average factual precision of the largest open models was below eighty percent, with errors concentrated in dates, quantities, and lesser-known affiliations.",
+   "evidence": [
+    "doc_factscore#c1",
+    "doc_hhem#c2",
+    "doc_selfcheck#c0",
+    "doc_summac#c1"
+   ],
+   "gold_chunk": "doc_factscore#c1",
+   "doc_id": "doc_factscore",
+   "perturbation": null
+  },
+  {
+   "id": "sup_19",
+   "label": "Supported",
+   "sentence": "The idea is to sample several independent responses from the same language model for the same question and then measure how consistent the target response is with those samples.",
+   "evidence": [
+    "doc_selfcheck#c0",
+    "doc_ragtruth#c2",
+    "doc_summac#c2",
+    "doc_summac#c1"
+   ],
+   "gold_chunk": "doc_selfcheck#c0",
+   "doc_id": "doc_selfcheck",
+   "perturbation": null
+  },
+  {
+   "id": "sup_20",
+   "label": "Supported",
+   "sentence": "Consistency can be measured with sentence embeddings, n-gram overlap, or BERTScore.",
+   "evidence": [
+    "doc_selfcheck#c1",
+    "doc_medical#c2",
+    "doc_hhem#c1",
+    "doc_rag#c3"
+   ],
+   "gold_chunk": "doc_selfcheck#c1",
+   "doc_id": "doc_selfcheck",
+   "perturbation": null
+  },
+  {
+   "id": "sup_21",
+   "label": "Supported",
+   "sentence": "The benchmark is intended as a general-purpose evaluation resource rather than a domain-specific one.",
+   "evidence": [
+    "doc_halueval#c1",
+    "doc_ragtruth#c0",
+    "doc_summac#c1",
+    "doc_rag#c2"
+   ],
+   "gold_chunk": "doc_halueval#c1",
+   "doc_id": "doc_halueval",
+   "perturbation": null
+  },
+  {
+   "id": "sup_22",
+   "label": "Supported",
+   "sentence": "Atomic-level scoring was also more stable under prompt variation than document-level scoring.",
+   "evidence": [
+    "doc_factscore#c1",
+    "doc_halueval#c0",
+    "doc_medical#c1",
+    "doc_medical#c0"
+   ],
+   "gold_chunk": "doc_factscore#c1",
+   "doc_id": "doc_factscore",
+   "perturbation": null
+  },
+  {
+   "id": "sup_23",
+   "label": "Supported",
+   "sentence": "The benchmark contains tens of thousands of samples covering question answering, dialogue summarization, and knowledge-grounded generation, each labelled as hallucinated or non-hallucinated.",
+   "evidence": [
+    "doc_halueval#c0",
+    "doc_hhem#c1",
+    "doc_rag#c1",
+    "doc_factscore#c1"
+   ],
+   "gold_chunk": "doc_halueval#c0",
+   "doc_id": "doc_halueval",
+   "perturbation": null
+  },
+  {
+   "id": "sup_24",
+   "label": "Supported",
+   "sentence": "In our experiments, RAG outperformed a parametric-only baseline on open-domain question answering benchmarks such as Natural Questions and TriviaQA.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_halueval#c1",
+    "doc_summac#c2",
+    "doc_hhem#c1"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null
+  },
+  {
+   "id": "sup_25",
+   "label": "Supported",
+   "sentence": "Every atomic fact is then checked independently against a knowledge source such as Wikipedia, and the fraction of supported facts is reported as the factual precision of the response.",
+   "evidence": [
+    "doc_factscore#c0",
+    "doc_rag#c0",
+    "doc_summac#c0",
+    "doc_ragtruth#c2"
+   ],
+   "gold_chunk": "doc_factscore#c0",
+   "doc_id": "doc_factscore",
+   "perturbation": null
+  },
+  {
+   "id": "sup_26",
+   "label": "Supported",
+   "sentence": "Half of the samples were produced by prompting a large language model to deliberately hallucinate, and the other half were collected from human-written responses.",
+   "evidence": [
+    "doc_halueval#c0",
+    "doc_rag#c3",
+    "doc_factscore#c0",
+    "doc_ragtruth#c2"
+   ],
+   "gold_chunk": "doc_halueval#c0",
+   "doc_id": "doc_halueval",
+   "perturbation": null
+  },
+  {
+   "id": "sup_27",
+   "label": "Supported",
+   "sentence": "Retrieval-Augmented Generation (RAG) combines a neural retriever with a sequence-to-sequence generator so that language model outputs are grounded in retrieved documents rather than only in the model's frozen parameters.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_selfcheck#c2",
+    "doc_medical#c0",
+    "doc_summac#c2"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": null
+  },
+  {
+   "id": "sup_28",
+   "label": "Supported",
+   "sentence": "Analysis of the corpus shows that most hallucinations in RAG outputs are partial: models typically restate the retrieved context correctly and then append an extra detail, a citation to a non-existent source, or an inflated statistic.",
+   "evidence": [
+    "doc_ragtruth#c1",
+    "doc_factscore#c2",
+    "doc_hhem#c0",
+    "doc_halueval#c1"
+   ],
+   "gold_chunk": "doc_ragtruth#c1",
+   "doc_id": "doc_ragtruth",
+   "perturbation": null
+  },
+  {
+   "id": "sup_29",
+   "label": "Supported",
+   "sentence": "Fine-tuning a DeBERTa-based NLI model on the RAGTruth training split produced large gains over the zero-shot baseline in our experiments.",
+   "evidence": [
+    "doc_ragtruth#c2",
+    "doc_rag#c1",
+    "doc_rag#c0",
+    "doc_halueval#c0"
+   ],
+   "gold_chunk": "doc_ragtruth#c2",
+   "doc_id": "doc_ragtruth",
+   "perturbation": null
+  },
+  {
+   "id": "sup_30",
+   "label": "Supported",
+   "sentence": "Because the method needs no external documents, it is easy to deploy, but it can only detect inconsistencies with the model's own distribution of beliefs, so systematic errors shared by all samples go undetected.",
+   "evidence": [
+    "doc_selfcheck#c1",
+    "doc_halueval#c0",
+    "doc_summac#c0",
+    "doc_factscore#c2"
+   ],
+   "gold_chunk": "doc_selfcheck#c1",
+   "doc_id": "doc_selfcheck",
+   "perturbation": null
+  },
+  {
+   "id": "sup_31",
+   "label": "Supported",
+   "sentence": "This decomposition makes it possible to localise errors to specific sentences instead of scoring the whole document at once.",
+   "evidence": [
+    "doc_factscore#c0",
+    "doc_hhem#c1",
+    "doc_hhem#c0",
+    "doc_halueval#c2"
+   ],
+   "gold_chunk": "doc_factscore#c0",
+   "doc_id": "doc_factscore",
+   "perturbation": null
+  },
+  {
+   "id": "sup_32",
+   "label": "Supported",
+   "sentence": "This is an important limitation compared with evidence-based verification, which checks answers against retrieved documents.",
+   "evidence": [
+    "doc_selfcheck#c1",
+    "doc_ragtruth#c0",
+    "doc_medical#c2",
+    "doc_summac#c2"
+   ],
+   "gold_chunk": "doc_selfcheck#c1",
+   "doc_id": "doc_selfcheck",
+   "perturbation": null
+  },
+  {
+   "id": "sup_33",
+   "label": "Supported",
+   "sentence": "The retriever is a Dense Passage Retrieval (DPR) module that selects the top-k passages from a large text collection for a given query, and the generator is a BART-based model that conditions its output on both the original question and those passages.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_halueval#c0",
+    "doc_summac#c1",
+    "doc_factscore#c0"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": null
+  },
+  {
+   "id": "sup_34",
+   "label": "Supported",
+   "sentence": "Regulatory approval for such systems requires external validation on data from hospitals outside the development site, because performance degrades when imaging protocols differ.",
+   "evidence": [
+    "doc_medical#c1",
+    "doc_factscore#c0",
+    "doc_summac#c1",
+    "doc_summac#c0"
+   ],
+   "gold_chunk": "doc_medical#c1",
+   "doc_id": "doc_medical",
+   "perturbation": null
+  },
+  {
+   "id": "sup_35",
+   "label": "Supported",
+   "sentence": "Our approach requires no task-specific fine-tuning when a sufficiently strong pretrained NLI model is used.",
+   "evidence": [
+    "doc_summac#c1",
+    "doc_selfcheck#c1",
+    "doc_factscore#c0",
+    "doc_medical#c2"
+   ],
+   "gold_chunk": "doc_summac#c1",
+   "doc_id": "doc_summac",
+   "perturbation": null
+  },
+  {
+   "id": "sup_36",
+   "label": "Supported",
+   "sentence": "HaluEval also provides a user study showing that readers are frequently unable to identify hallucinations without side-by-side access to the source context.",
+   "evidence": [
+    "doc_halueval#c1",
+    "doc_summac#c2",
+    "doc_ragtruth#c1",
+    "doc_factscore#c0"
+   ],
+   "gold_chunk": "doc_halueval#c1",
+   "doc_id": "doc_halueval",
+   "perturbation": null
+  },
+  {
+   "id": "sup_37",
+   "label": "Supported",
+   "sentence": "Retrieval also allows the system to be updated by changing the document index, without retraining the generator.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_medical#c0",
+    "doc_selfcheck#c1",
+    "doc_halueval#c2"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null
+  },
+  {
+   "id": "sup_38",
+   "label": "Supported",
+   "sentence": "SummaC therefore performs verification at the sentence level rather than at the document level.",
+   "evidence": [
+    "doc_summac#c0",
+    "doc_selfcheck#c0",
+    "doc_hhem#c2",
+    "doc_selfcheck#c2"
+   ],
+   "gold_chunk": "doc_summac#c0",
+   "doc_id": "doc_summac",
+   "perturbation": null
+  },
+  {
+   "id": "sup_39",
+   "label": "Supported",
+   "sentence": "Convolutional neural networks have been applied to the interpretation of chest radiographs, retinal fundus images, and histopathology slides with performance approaching that of specialist clinicians in controlled studies.",
+   "evidence": [
+    "doc_medical#c0",
+    "doc_halueval#c0",
+    "doc_summac#c2",
+    "doc_hhem#c1"
+   ],
+   "gold_chunk": "doc_medical#c0",
+   "doc_id": "doc_medical",
+   "perturbation": null
+  },
+  {
+   "id": "sup_40",
+   "label": "Supported",
+   "sentence": "In a multi-centre evaluation of a deep learning system for chest X-ray screening, the reported sensitivity was 94 percent with a specificity of 89 percent on a held-out test set of twelve thousand images.",
+   "evidence": [
+    "doc_medical#c0",
+    "doc_selfcheck#c1",
+    "doc_halueval#c0",
+    "doc_rag#c1"
+   ],
+   "gold_chunk": "doc_medical#c0",
+   "doc_id": "doc_medical",
+   "perturbation": null
+  },
+  {
+   "id": "sup_41",
+   "label": "Supported",
+   "sentence": "For each sentence in the generated summary, we compare it against each sentence of the source document using a pretrained Natural Language Inference (NLI) model.",
+   "evidence": [
+    "doc_summac#c0",
+    "doc_halueval#c0",
+    "doc_halueval#c2",
+    "doc_factscore#c1"
+   ],
+   "gold_chunk": "doc_summac#c0",
+   "doc_id": "doc_summac",
+   "perturbation": null
+  },
+  {
+   "id": "sup_42",
+   "label": "Supported",
+   "sentence": "The Hughes Hallucination Evaluation Model (HHEM) is a production-oriented classifier that estimates the probability that a summarization or RAG response is faithful to its source document.",
+   "evidence": [
+    "doc_hhem#c0",
+    "doc_rag#c2",
+    "doc_rag#c1",
+    "doc_medical#c0"
+   ],
+   "gold_chunk": "doc_hhem#c0",
+   "doc_id": "doc_hhem",
+   "perturbation": null
+  },
+  {
+   "id": "sup_43",
+   "label": "Supported",
+   "sentence": "On the SummaEval and FactCC evaluation sets, sentence-level NLI scoring outperformed embedding-similarity baselines such as BLEU and ROUGE, which measure only surface overlap and fail to detect logically contradictory statements.",
+   "evidence": [
+    "doc_summac#c2",
+    "doc_rag#c0",
+    "doc_medical#c1",
+    "doc_selfcheck#c2"
+   ],
+   "gold_chunk": "doc_summac#c2",
+   "doc_id": "doc_summac",
+   "perturbation": null
+  },
+  {
+   "id": "sup_44",
+   "label": "Supported",
+   "sentence": "Despite this limitation, atomic fact scoring is now a standard evaluation protocol for long-form generation.",
+   "evidence": [
+    "doc_factscore#c2",
+    "doc_summac#c2",
+    "doc_halueval#c1",
+    "doc_halueval#c2"
+   ],
+   "gold_chunk": "doc_factscore#c2",
+   "doc_id": "doc_factscore",
+   "perturbation": null
+  },
+  {
+   "id": "sup_45",
+   "label": "Supported",
+   "sentence": "Entailment means the evidence supports the sentence, contradiction means the evidence disagrees with it, and neutral means the evidence neither supports nor refutes it.",
+   "evidence": [
+    "doc_summac#c1",
+    "doc_hhem#c1",
+    "doc_halueval#c2",
+    "doc_halueval#c0"
+   ],
+   "gold_chunk": "doc_summac#c1",
+   "doc_id": "doc_summac",
+   "perturbation": null
+  },
+  {
+   "id": "sup_46",
+   "label": "Supported",
+   "sentence": "Clinicians using the model as a decision support tool completed case reviews faster than clinicians working without assistance, although the study also documented a risk of automation bias, where readers accepted incorrect model suggestions.",
+   "evidence": [
+    "doc_medical#c1",
+    "doc_rag#c1",
+    "doc_ragtruth#c2",
+    "doc_factscore#c0"
+   ],
+   "gold_chunk": "doc_medical#c1",
+   "doc_id": "doc_medical",
+   "perturbation": null
+  },
+  {
+   "id": "sup_47",
+   "label": "Supported",
+   "sentence": "HHEM is trained on a large corpus of document-summary pairs labelled for factual consistency and is distributed as an open model that can be run on commodity hardware.",
+   "evidence": [
+    "doc_hhem#c0",
+    "doc_halueval#c0",
+    "doc_summac#c0",
+    "doc_rag#c1"
+   ],
+   "gold_chunk": "doc_hhem#c0",
+   "doc_id": "doc_hhem",
+   "perturbation": null
+  },
+  {
+   "id": "sup_48",
+   "label": "Supported",
+   "sentence": "The annotation scheme distinguishes fully supported statements, unsupported additions, and statements that directly contradict the retrieval context.",
+   "evidence": [
+    "doc_ragtruth#c1",
+    "doc_rag#c3",
+    "doc_halueval#c1",
+    "doc_summac#c1"
+   ],
+   "gold_chunk": "doc_ragtruth#c1",
+   "doc_id": "doc_ragtruth",
+   "perturbation": null
+  },
+  {
+   "id": "sup_49",
+   "label": "Supported",
+   "sentence": "RAGTruth is a corpus in which annotators marked the exact word-level spans of hallucinated content inside more than eighteen thousand responses generated by retrieval-augmented language models.",
+   "evidence": [
+    "doc_ragtruth#c0",
+    "doc_summac#c2",
+    "doc_selfcheck#c2",
+    "doc_medical#c0"
+   ],
+   "gold_chunk": "doc_ragtruth#c0",
+   "doc_id": "doc_ragtruth",
+   "perturbation": null
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "The annotation scheme distinguishes fully unsupported statements, unsupported additions, and statements that directly contradict the retrieval context.",
+   "evidence": [
+    "doc_ragtruth#c1",
+    "doc_selfcheck#c1",
+    "doc_selfcheck#c2",
+    "doc_hhem#c2"
+   ],
+   "gold_chunk": "doc_ragtruth#c1",
+   "doc_id": "doc_ragtruth",
+   "perturbation": "antonym",
+   "id": "con_0"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Convolutional neural networks have not been applied to the interpretation of chest radiographs, retinal fundus images, and histopathology slides with performance approaching that of specialist clinicians in controlled studies.",
+   "evidence": [
+    "doc_medical#c0",
+    "doc_ragtruth#c2",
+    "doc_factscore#c0",
+    "doc_summac#c2"
+   ],
+   "gold_chunk": "doc_medical#c0",
+   "doc_id": "doc_medical",
+   "perturbation": "negation",
+   "id": "con_1"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Half of the samples were not produced by prompting a large language model to deliberately hallucinate, and the other half were collected from human-written responses.",
+   "evidence": [
+    "doc_halueval#c0",
+    "doc_selfcheck#c0",
+    "doc_medical#c1",
+    "doc_ragtruth#c0"
+   ],
+   "gold_chunk": "doc_halueval#c0",
+   "doc_id": "doc_halueval",
+   "perturbation": "negation",
+   "id": "con_2"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "SelfCheckGPT is not a reference-free method for detecting hallucinations that does not require access to a knowledge base.",
+   "evidence": [
+    "doc_selfcheck#c0",
+    "doc_summac#c1",
+    "doc_rag#c0",
+    "doc_rag#c3"
+   ],
+   "gold_chunk": "doc_selfcheck#c0",
+   "doc_id": "doc_selfcheck",
+   "perturbation": "negation",
+   "id": "con_3"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "The retriever is not a Dense Passage Retrieval (DPR) module that selects the top-k passages from a large text collection for a given query, and the generator is a BART-based model that conditions its output on both the original question and those passages.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_hhem#c1",
+    "doc_selfcheck#c2",
+    "doc_halueval#c1"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": "negation",
+   "id": "con_4"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Despite this limitation, atomic fact scoring is not now a standard evaluation protocol for long-form generation.",
+   "evidence": [
+    "doc_factscore#c2",
+    "doc_medical#c2",
+    "doc_halueval#c0",
+    "doc_rag#c2"
+   ],
+   "gold_chunk": "doc_factscore#c2",
+   "doc_id": "doc_factscore",
+   "perturbation": "negation",
+   "id": "con_5"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "If a statement in the target response is not factually correct, it tends to reappear across most samples; if it is hallucinated, it is contradicted or omitted in the other samples.",
+   "evidence": [
+    "doc_selfcheck#c0",
+    "doc_halueval#c1",
+    "doc_factscore#c2",
+    "doc_factscore#c1"
+   ],
+   "gold_chunk": "doc_selfcheck#c0",
+   "doc_id": "doc_selfcheck",
+   "perturbation": "negation",
+   "id": "con_6"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "In our experiments, RAG underperformed a parametric-only baseline on open-domain question answering benchmarks such as Natural Questions and TriviaQA.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_selfcheck#c2",
+    "doc_selfcheck#c1",
+    "doc_hhem#c0"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": "antonym",
+   "id": "con_7"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "This is not an important limitation compared with evidence-based verification, which checks answers against retrieved documents.",
+   "evidence": [
+    "doc_selfcheck#c1",
+    "doc_halueval#c2",
+    "doc_hhem#c2",
+    "doc_factscore#c2"
+   ],
+   "gold_chunk": "doc_selfcheck#c1",
+   "doc_id": "doc_selfcheck",
+   "perturbation": "negation",
+   "id": "con_8"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "RAGTruth is not a corpus in which annotators marked the exact word-level spans of hallucinated content inside more than eighteen thousand responses generated by retrieval-augmented language models.",
+   "evidence": [
+    "doc_ragtruth#c0",
+    "doc_summac#c2",
+    "doc_rag#c3",
+    "doc_medical#c1"
+   ],
+   "gold_chunk": "doc_ragtruth#c0",
+   "doc_id": "doc_ragtruth",
+   "perturbation": "negation",
+   "id": "con_9"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "The idea is not to sample several independent responses from the same language model for the same question and then measure how consistent the target response is with those samples.",
+   "evidence": [
+    "doc_selfcheck#c0",
+    "doc_factscore#c2",
+    "doc_summac#c2",
+    "doc_rag#c0"
+   ],
+   "gold_chunk": "doc_selfcheck#c0",
+   "doc_id": "doc_selfcheck",
+   "perturbation": "negation",
+   "id": "con_10"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Every atomic fact is then checked independently against a knowledge source such as Wikipedia, and the fraction of unsupported facts is reported as the factual precision of the response.",
+   "evidence": [
+    "doc_factscore#c0",
+    "doc_ragtruth#c0",
+    "doc_selfcheck#c0",
+    "doc_hhem#c0"
+   ],
+   "gold_chunk": "doc_factscore#c0",
+   "doc_id": "doc_factscore",
+   "perturbation": "antonym",
+   "id": "con_11"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "The Hughes Hallucination Evaluation Model (HHEM) is not a production-oriented classifier that estimates the probability that a summarization or RAG response is faithful to its source document.",
+   "evidence": [
+    "doc_hhem#c0",
+    "doc_medical#c1",
+    "doc_summac#c2",
+    "doc_selfcheck#c0"
+   ],
+   "gold_chunk": "doc_hhem#c0",
+   "doc_id": "doc_hhem",
+   "perturbation": "negation",
+   "id": "con_12"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "In experiments on biographies of public figures, FActScore found that the average factual precision of the largest open models was not below eighty percent, with errors concentrated in dates, quantities, and lesser-known affiliations.",
+   "evidence": [
+    "doc_factscore#c1",
+    "doc_ragtruth#c1",
+    "doc_summac#c0",
+    "doc_halueval#c1"
+   ],
+   "gold_chunk": "doc_factscore#c1",
+   "doc_id": "doc_factscore",
+   "perturbation": "negation",
+   "id": "con_13"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "We observed that grounding generation in retrieved evidence increases hallucination: the model states facts that appear in the source passages instead of inventing plausible but unsupported details.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_halueval#c2",
+    "doc_summac#c2",
+    "doc_medical#c2"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": "antonym",
+   "id": "con_14"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Consistency can not be measured with sentence embeddings, n-gram overlap, or BERTScore.",
+   "evidence": [
+    "doc_selfcheck#c1",
+    "doc_summac#c0",
+    "doc_rag#c3",
+    "doc_rag#c0"
+   ],
+   "gold_chunk": "doc_selfcheck#c1",
+   "doc_id": "doc_selfcheck",
+   "perturbation": "negation",
+   "id": "con_15"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Each response is paired with the retrieval context that was supplied to the model, so a detector can learn to distinguish content that is unsupported by the context from content that is merely fluent.",
+   "evidence": [
+    "doc_ragtruth#c0",
+    "doc_rag#c0",
+    "doc_selfcheck#c0",
+    "doc_medical#c2"
+   ],
+   "gold_chunk": "doc_ragtruth#c0",
+   "doc_id": "doc_ragtruth",
+   "perturbation": "antonym",
+   "id": "con_16"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Analysis of the corpus shows that most hallucinations in RAG outputs are not partial: models typically restate the retrieved context correctly and then append an extra detail, a citation to a non-existent source, or an inflated statistic.",
+   "evidence": [
+    "doc_ragtruth#c1",
+    "doc_factscore#c1",
+    "doc_halueval#c1",
+    "doc_summac#c0"
+   ],
+   "gold_chunk": "doc_ragtruth#c1",
+   "doc_id": "doc_ragtruth",
+   "perturbation": "negation",
+   "id": "con_17"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "The benchmark is not intended as a general-purpose evaluation resource rather than a domain-specific one.",
+   "evidence": [
+    "doc_halueval#c1",
+    "doc_factscore#c2",
+    "doc_hhem#c2",
+    "doc_hhem#c0"
+   ],
+   "gold_chunk": "doc_halueval#c1",
+   "doc_id": "doc_halueval",
+   "perturbation": "negation",
+   "id": "con_18"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Atomic-level scoring was not also more stable under prompt variation than document-level scoring.",
+   "evidence": [
+    "doc_factscore#c1",
+    "doc_rag#c0",
+    "doc_hhem#c1",
+    "doc_medical#c2"
+   ],
+   "gold_chunk": "doc_factscore#c1",
+   "doc_id": "doc_factscore",
+   "perturbation": "negation",
+   "id": "con_19"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Because the method needs no external documents, it is not easy to deploy, but it can only detect inconsistencies with the model's own distribution of beliefs, so systematic errors shared by all samples go undetected.",
+   "evidence": [
+    "doc_selfcheck#c1",
+    "doc_ragtruth#c1",
+    "doc_summac#c0",
+    "doc_summac#c1"
+   ],
+   "gold_chunk": "doc_selfcheck#c1",
+   "doc_id": "doc_selfcheck",
+   "perturbation": "negation",
+   "id": "con_20"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "On the SummaEval and FactCC evaluation sets, sentence-level NLI scoring underperformed embedding-similarity baselines such as BLEU and ROUGE, which measure only surface overlap and fail to detect logically contradictory statements.",
+   "evidence": [
+    "doc_summac#c2",
+    "doc_ragtruth#c1",
+    "doc_rag#c1",
+    "doc_selfcheck#c0"
+   ],
+   "gold_chunk": "doc_summac#c2",
+   "doc_id": "doc_summac",
+   "perturbation": "antonym",
+   "id": "con_21"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "HaluEval is not a benchmark dataset for measuring how often and in what ways large language models hallucinate.",
+   "evidence": [
+    "doc_halueval#c0",
+    "doc_factscore#c1",
+    "doc_ragtruth#c2",
+    "doc_rag#c0"
+   ],
+   "gold_chunk": "doc_halueval#c0",
+   "doc_id": "doc_halueval",
+   "perturbation": "negation",
+   "id": "con_22"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Retrieval-Augmented Generation (RAG) combines a neural retriever with a sequence-to-sequence generator so that language model outputs are not grounded in retrieved documents rather than only in the model's frozen parameters.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_selfcheck#c1",
+    "doc_hhem#c1",
+    "doc_summac#c0"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": "negation",
+   "id": "con_23"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "RAG was published in 2023 and has since become the standard architecture for grounded question answering systems.",
+   "evidence": [
+    "doc_rag#c2",
+    "doc_medical#c2",
+    "doc_factscore#c1",
+    "doc_ragtruth#c2"
+   ],
+   "gold_chunk": "doc_rag#c2",
+   "doc_id": "doc_rag",
+   "perturbation": "number",
+   "id": "con_24"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "HaluEval also provides a user study showing that readers are not frequently unable to identify hallucinations without side-by-side access to the source context.",
+   "evidence": [
+    "doc_halueval#c1",
+    "doc_rag#c0",
+    "doc_factscore#c1",
+    "doc_selfcheck#c2"
+   ],
+   "gold_chunk": "doc_halueval#c1",
+   "doc_id": "doc_halueval",
+   "perturbation": "negation",
+   "id": "con_25"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "The corpus was released in 1998 and is now widely used for training and evaluating sentence-level and span-level hallucination detectors.",
+   "evidence": [
+    "doc_ragtruth#c2",
+    "doc_medical#c0",
+    "doc_rag#c1",
+    "doc_hhem#c1"
+   ],
+   "gold_chunk": "doc_ragtruth#c2",
+   "doc_id": "doc_ragtruth",
+   "perturbation": "year",
+   "id": "con_26"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "The main failure mode we identified is not retrieval failure: if the retriever returns irrelevant passages, the generator may ignore the context and fall back to parametric knowledge, which reintroduces factual errors.",
+   "evidence": [
+    "doc_rag#c2",
+    "doc_ragtruth#c0",
+    "doc_halueval#c0",
+    "doc_factscore#c0"
+   ],
+   "gold_chunk": "doc_rag#c2",
+   "doc_id": "doc_rag",
+   "perturbation": "negation",
+   "id": "con_27"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Our approach requires no task-specific fine-tuning when a sufficiently strong pretrained NLI model is not used.",
+   "evidence": [
+    "doc_summac#c1",
+    "doc_halueval#c2",
+    "doc_hhem#c2",
+    "doc_rag#c2"
+   ],
+   "gold_chunk": "doc_summac#c1",
+   "doc_id": "doc_summac",
+   "perturbation": "negation",
+   "id": "con_28"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "HHEM is not trained on a large corpus of document-summary pairs labelled for factual consistency and is distributed as an open model that can be run on commodity hardware.",
+   "evidence": [
+    "doc_hhem#c0",
+    "doc_rag#c2",
+    "doc_halueval#c0",
+    "doc_ragtruth#c2"
+   ],
+   "gold_chunk": "doc_hhem#c0",
+   "doc_id": "doc_hhem",
+   "perturbation": "negation",
+   "id": "con_29"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "In a multi-centre evaluation of a deep learning system for chest X-ray screening, the reported sensitivity was not 94 percent with a specificity of 89 percent on a held-out test set of twelve thousand images.",
+   "evidence": [
+    "doc_medical#c0",
+    "doc_rag#c0",
+    "doc_summac#c2",
+    "doc_hhem#c1"
+   ],
+   "gold_chunk": "doc_medical#c0",
+   "doc_id": "doc_medical",
+   "perturbation": "negation",
+   "id": "con_30"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "SelfCheckGPT achieves weak correlation with human hallucination annotations on the BioDomain and NarrativeQA evaluation sets.",
+   "evidence": [
+    "doc_selfcheck#c2",
+    "doc_ragtruth#c0",
+    "doc_medical#c2",
+    "doc_hhem#c0"
+   ],
+   "gold_chunk": "doc_selfcheck#c2",
+   "doc_id": "doc_selfcheck",
+   "perturbation": "antonym",
+   "id": "con_31"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Factual inconsistency in generated summaries is not often local: a single sentence may contradict the source document while the rest of the summary is correct.",
+   "evidence": [
+    "doc_summac#c0",
+    "doc_selfcheck#c0",
+    "doc_halueval#c1",
+    "doc_factscore#c0"
+   ],
+   "gold_chunk": "doc_summac#c0",
+   "doc_id": "doc_summac",
+   "perturbation": "negation",
+   "id": "con_32"
+  },
+  {
+   "label": "Contradicted",
+   "sentence": "Our results show that judge models are not inexpensive but over-confident, while fine-tuned classifiers give the best precision.",
+   "evidence": [
+    "doc_halueval#c1",
+    "doc_ragtruth#c2",
+    "doc_summac#c0",
+    "doc_hhem#c1"
+   ],
+   "gold_chunk": "doc_halueval#c1",
+   "doc_id": "doc_halueval",
+   "perturbation": "negation",
+   "id": "con_33"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "For each sentence in the generated summary, we compare it against each sentence of the source document using a pretrained Natural Language Inference (NLI) model.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_summac#c1",
+    "doc_ragtruth#c1",
+    "doc_hhem#c0"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_0"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "The corpus was released in 2024 and is now widely used for training and evaluating sentence-level and span-level hallucination detectors.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_selfcheck#c0",
+    "doc_factscore#c2",
+    "doc_summac#c0"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_1"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "In our experiments, RAG outperformed a parametric-only baseline on open-domain question answering benchmarks such as Natural Questions and TriviaQA.",
+   "evidence": [
+    "doc_summac#c2",
+    "doc_hhem#c2",
+    "doc_medical#c2",
+    "doc_rag#c2"
+   ],
+   "gold_chunk": "doc_summac#c2",
+   "doc_id": "doc_summac",
+   "perturbation": null,
+   "id": "uns_2"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Despite this limitation, atomic fact scoring is now a standard evaluation protocol for long-form generation.",
+   "evidence": [
+    "doc_rag#c2",
+    "doc_medical#c2",
+    "doc_medical#c0",
+    "doc_summac#c0"
+   ],
+   "gold_chunk": "doc_rag#c2",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_3"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "SelfCheckGPT is a reference-free method for detecting hallucinations that does not require access to a knowledge base.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_hhem#c0",
+    "doc_medical#c2",
+    "doc_ragtruth#c0"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_4"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "The benchmark contains tens of thousands of samples covering question answering, dialogue summarization, and knowledge-grounded generation, each labelled as hallucinated or non-hallucinated.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_medical#c1",
+    "doc_hhem#c0",
+    "doc_summac#c2"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_5"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Retrieval-Augmented Generation (RAG) combines a neural retriever with a sequence-to-sequence generator so that language model outputs are grounded in retrieved documents rather than only in the model's frozen parameters.",
+   "evidence": [
+    "doc_summac#c0",
+    "doc_factscore#c2",
+    "doc_hhem#c0",
+    "doc_rag#c2"
+   ],
+   "gold_chunk": "doc_summac#c0",
+   "doc_id": "doc_summac",
+   "perturbation": null,
+   "id": "uns_6"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "The Hughes Hallucination Evaluation Model (HHEM) is a production-oriented classifier that estimates the probability that a summarization or RAG response is faithful to its source document.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_selfcheck#c1",
+    "doc_ragtruth#c2",
+    "doc_selfcheck#c2"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_7"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "NLI models classify a premise-hypothesis pair into one of three labels: entailment, contradiction, or neutral.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_halueval#c0",
+    "doc_hhem#c0",
+    "doc_ragtruth#c0"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_8"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "On the SummaEval and FactCC evaluation sets, sentence-level NLI scoring outperformed embedding-similarity baselines such as BLEU and ROUGE, which measure only surface overlap and fail to detect logically contradictory statements.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_hhem#c0",
+    "doc_selfcheck#c1",
+    "doc_medical#c0"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_9"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Every atomic fact is then checked independently against a knowledge source such as Wikipedia, and the fraction of supported facts is reported as the factual precision of the response.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_hhem#c1",
+    "doc_ragtruth#c2",
+    "doc_selfcheck#c1"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_10"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Hallucination detection in RAG systems requires data at a finer granularity than whole-response labels.",
+   "evidence": [
+    "doc_rag#c2",
+    "doc_selfcheck#c1",
+    "doc_hhem#c0",
+    "doc_factscore#c1"
+   ],
+   "gold_chunk": "doc_rag#c2",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_11"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "FActScore evaluates generation quality by decomposing a long-form response into a list of atomic facts, each expressing exactly one verifiable claim.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_factscore#c1",
+    "doc_halueval#c1",
+    "doc_factscore#c2"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_12"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "The idea is to sample several independent responses from the same language model for the same question and then measure how consistent the target response is with those samples.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_selfcheck#c1",
+    "doc_medical#c1",
+    "doc_factscore#c2"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_13"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "In a multi-centre evaluation of a deep learning system for chest X-ray screening, the reported sensitivity was 94 percent with a specificity of 89 percent on a held-out test set of twelve thousand images.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_selfcheck#c1",
+    "doc_halueval#c0",
+    "doc_medical#c1"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_14"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Factual inconsistency in generated summaries is often local: a single sentence may contradict the source document while the rest of the summary is correct.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_hhem#c0",
+    "doc_selfcheck#c1",
+    "doc_factscore#c2"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_15"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Consistency can be measured with sentence embeddings, n-gram overlap, or BERTScore.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_summac#c1",
+    "doc_medical#c2",
+    "doc_summac#c0"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_16"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "SelfCheckGPT achieves strong correlation with human hallucination annotations on the BioDomain and NarrativeQA evaluation sets.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_hhem#c1",
+    "doc_factscore#c2",
+    "doc_medical#c0"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_17"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "RAGTruth is a corpus in which annotators marked the exact word-level spans of hallucinated content inside more than eighteen thousand responses generated by retrieval-augmented language models.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_factscore#c0",
+    "doc_summac#c2",
+    "doc_selfcheck#c0"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_18"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "SummaC therefore performs verification at the sentence level rather than at the document level.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_medical#c1",
+    "doc_hhem#c2",
+    "doc_ragtruth#c0"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_19"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "HaluEval is a benchmark dataset for measuring how often and in what ways large language models hallucinate.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_selfcheck#c2",
+    "doc_factscore#c2",
+    "doc_summac#c1"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_20"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Our results show that judge models are inexpensive but over-confident, while fine-tuned classifiers give the best precision.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_halueval#c0",
+    "doc_summac#c2",
+    "doc_medical#c0"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_21"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "The retriever is a Dense Passage Retrieval (DPR) module that selects the top-k passages from a large text collection for a given query, and the generator is a BART-based model that conditions its output on both the original question and those passages.",
+   "evidence": [
+    "doc_summac#c1",
+    "doc_ragtruth#c0",
+    "doc_rag#c3",
+    "doc_medical#c1"
+   ],
+   "gold_chunk": "doc_summac#c1",
+   "doc_id": "doc_summac",
+   "perturbation": null,
+   "id": "uns_22"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "RAG was published in 2020 and has since become the standard architecture for grounded question answering systems.",
+   "evidence": [
+    "doc_summac#c2",
+    "doc_hhem#c1",
+    "doc_factscore#c2",
+    "doc_ragtruth#c1"
+   ],
+   "gold_chunk": "doc_summac#c2",
+   "doc_id": "doc_summac",
+   "perturbation": null,
+   "id": "uns_23"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "We aggregate these pairwise scores into a single document-level consistency score and show that it correlates strongly with human judgments of factual consistency.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_factscore#c0",
+    "doc_ragtruth#c2",
+    "doc_factscore#c2"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_24"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Analysis of the corpus shows that most hallucinations in RAG outputs are partial: models typically restate the retrieved context correctly and then append an extra detail, a citation to a non-existent source, or an inflated statistic.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_summac#c1",
+    "doc_selfcheck#c1",
+    "doc_halueval#c0"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_25"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "In experiments on biographies of public figures, FActScore found that the average factual precision of the largest open models was below eighty percent, with errors concentrated in dates, quantities, and lesser-known affiliations.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_summac#c1",
+    "doc_factscore#c2",
+    "doc_medical#c1"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_26"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "The model scores each response independently of the question, so it measures consistency with the document rather than answer relevance.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_summac#c0",
+    "doc_halueval#c2",
+    "doc_medical#c1"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_27"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Each response is paired with the retrieval context that was supplied to the model, so a detector can learn to distinguish content that is supported by the context from content that is merely fluent.",
+   "evidence": [
+    "doc_summac#c0",
+    "doc_ragtruth#c2",
+    "doc_medical#c0",
+    "doc_medical#c2"
+   ],
+   "gold_chunk": "doc_summac#c0",
+   "doc_id": "doc_summac",
+   "perturbation": null,
+   "id": "uns_28"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "All experiments described in this review received institutional ethics approval.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_factscore#c0",
+    "doc_ragtruth#c2",
+    "doc_hhem#c2"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_29"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Because the method needs no external documents, it is easy to deploy, but it can only detect inconsistencies with the model's own distribution of beliefs, so systematic errors shared by all samples go undetected.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_summac#c0",
+    "doc_ragtruth#c2",
+    "doc_summac#c2"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_30"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "The main failure mode we identified is retrieval failure: if the retriever returns irrelevant passages, the generator may ignore the context and fall back to parametric knowledge, which reintroduces factual errors.",
+   "evidence": [
+    "doc_summac#c2",
+    "doc_rag#c1",
+    "doc_hhem#c2",
+    "doc_selfcheck#c0"
+   ],
+   "gold_chunk": "doc_summac#c2",
+   "doc_id": "doc_summac",
+   "perturbation": null,
+   "id": "uns_31"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Retrieval also allows the system to be updated by changing the document index, without retraining the generator.",
+   "evidence": [
+    "doc_summac#c2",
+    "doc_medical#c1",
+    "doc_ragtruth#c2",
+    "doc_ragtruth#c1"
+   ],
+   "gold_chunk": "doc_summac#c2",
+   "doc_id": "doc_summac",
+   "perturbation": null,
+   "id": "uns_32"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Regulatory approval for such systems requires external validation on data from hospitals outside the development site, because performance degrades when imaging protocols differ.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_hhem#c1",
+    "doc_ragtruth#c2",
+    "doc_selfcheck#c0"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_33"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Half of the samples were produced by prompting a large language model to deliberately hallucinate, and the other half were collected from human-written responses.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_summac#c0",
+    "doc_factscore#c2",
+    "doc_medical#c0"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_34"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "We observed that grounding generation in retrieved evidence reduces hallucination: the model states facts that appear in the source passages instead of inventing plausible but unsupported details.",
+   "evidence": [
+    "doc_summac#c2",
+    "doc_factscore#c1",
+    "doc_rag#c2",
+    "doc_medical#c2"
+   ],
+   "gold_chunk": "doc_summac#c2",
+   "doc_id": "doc_summac",
+   "perturbation": null,
+   "id": "uns_35"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Atomic-level scoring was also more stable under prompt variation than document-level scoring.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_hhem#c0",
+    "doc_summac#c2",
+    "doc_hhem#c1"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_36"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Our approach requires no task-specific fine-tuning when a sufficiently strong pretrained NLI model is used.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_summac#c0",
+    "doc_factscore#c2",
+    "doc_selfcheck#c2"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_37"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "The benchmark is intended as a general-purpose evaluation resource rather than a domain-specific one.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_medical#c0",
+    "doc_factscore#c2",
+    "doc_medical#c1"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_38"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Convolutional neural networks have been applied to the interpretation of chest radiographs, retinal fundus images, and histopathology slides with performance approaching that of specialist clinicians in controlled studies.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_hhem#c1",
+    "doc_ragtruth#c2",
+    "doc_factscore#c0"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_39"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "If a statement in the target response is factually correct, it tends to reappear across most samples; if it is hallucinated, it is contradicted or omitted in the other samples.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_summac#c0",
+    "doc_hhem#c2",
+    "doc_ragtruth#c1"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_40"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "This is an important limitation compared with evidence-based verification, which checks answers against retrieved documents.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_summac#c0",
+    "doc_halueval#c0",
+    "doc_summac#c2"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_41"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Entailment means the evidence supports the sentence, contradiction means the evidence disagrees with it, and neutral means the evidence neither supports nor refutes it.",
+   "evidence": [
+    "doc_rag#c1",
+    "doc_factscore#c2",
+    "doc_halueval#c2",
+    "doc_selfcheck#c2"
+   ],
+   "gold_chunk": "doc_rag#c1",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_42"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "We evaluated several detection strategies on HaluEval, including direct prompting of a judge model, embedding similarity against the source document, and fine-tuned NLI classifiers.",
+   "evidence": [
+    "doc_rag#c2",
+    "doc_hhem#c1",
+    "doc_summac#c0",
+    "doc_hhem#c0"
+   ],
+   "gold_chunk": "doc_rag#c2",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_43"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Clinicians using the model as a decision support tool completed case reviews faster than clinicians working without assistance, although the study also documented a risk of automation bias, where readers accepted incorrect model suggestions.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_summac#c0",
+    "doc_factscore#c0",
+    "doc_selfcheck#c2"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_44"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "Fine-tuning a DeBERTa-based NLI model on the RAGTruth training split produced large gains over the zero-shot baseline in our experiments.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_hhem#c2",
+    "doc_ragtruth#c1",
+    "doc_medical#c1"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_45"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "The annotation scheme distinguishes fully supported statements, unsupported additions, and statements that directly contradict the retrieval context.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_summac#c0",
+    "doc_summac#c2",
+    "doc_medical#c1"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_46"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "This decomposition makes it possible to localise errors to specific sentences instead of scoring the whole document at once.",
+   "evidence": [
+    "doc_rag#c2",
+    "doc_ragtruth#c2",
+    "doc_hhem#c1",
+    "doc_selfcheck#c0"
+   ],
+   "gold_chunk": "doc_rag#c2",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_47"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "HaluEval also provides a user study showing that readers are frequently unable to identify hallucinations without side-by-side access to the source context.",
+   "evidence": [
+    "doc_rag#c3",
+    "doc_halueval#c2",
+    "doc_ragtruth#c1",
+    "doc_hhem#c0"
+   ],
+   "gold_chunk": "doc_rag#c3",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_48"
+  },
+  {
+   "label": "Unsupported",
+   "sentence": "HHEM is trained on a large corpus of document-summary pairs labelled for factual consistency and is distributed as an open model that can be run on commodity hardware.",
+   "evidence": [
+    "doc_rag#c0",
+    "doc_ragtruth#c1",
+    "doc_summac#c1",
+    "doc_halueval#c1"
+   ],
+   "gold_chunk": "doc_rag#c0",
+   "doc_id": "doc_rag",
+   "perturbation": null,
+   "id": "uns_49"
+  }
+ ],
+ "chunks": {
+  "doc_rag#c0": {
+   "doc_id": "doc_rag",
+   "text": "Retrieval-Augmented Generation (RAG) combines a neural retriever with a sequence-to-sequence generator so that language model outputs are grounded in retrieved documents rather than only in the model's frozen parameters. The retriever is a Dense Passage Retrieval (DPR) module that selects the top-k passages from a large text collection for a given query, and the generator is a BART-based model that conditions its output on both the original question and those passages. In our experiments, RAG outperformed a parametric-only baseline on"
+  },
+  "doc_rag#c1": {
+   "doc_id": "doc_rag",
+   "text": "conditions its output on both the original question and those passages. In our experiments, RAG outperformed a parametric-only baseline on open-domain question answering benchmarks such as Natural Questions and TriviaQA. We observed that grounding generation in retrieved evidence reduces hallucination: the model states facts that appear in the source passages instead of inventing plausible but unsupported details. Retrieval also allows the system to be updated by changing the document index, without retraining the generator. The main failure mode we identified"
+  },
+  "doc_rag#c2": {
+   "doc_id": "doc_rag",
+   "text": "the system to be updated by changing the document index, without retraining the generator. The main failure mode we identified is retrieval failure: if the retriever returns irrelevant passages, the generator may ignore the context and fall back to parametric knowledge, which reintroduces factual errors. RAG was published in 2020 and has since become the standard architecture for grounded question answering systems."
+  },
+  "doc_rag#c3": {
+   "doc_id": "doc_rag",
+   "text": "answering systems."
+  },
+  "doc_summac#c0": {
+   "doc_id": "doc_summac",
+   "text": "Factual inconsistency in generated summaries is often local: a single sentence may contradict the source document while the rest of the summary is correct. SummaC therefore performs verification at the sentence level rather than at the document level. For each sentence in the generated summary, we compare it against each sentence of the source document using a pretrained Natural Language Inference (NLI) model. NLI models classify a premise-hypothesis pair into one of three labels: entailment, contradiction, or neutral. Entailment means"
+  },
+  "doc_summac#c1": {
+   "doc_id": "doc_summac",
+   "text": "Inference (NLI) model. NLI models classify a premise-hypothesis pair into one of three labels: entailment, contradiction, or neutral. Entailment means the evidence supports the sentence, contradiction means the evidence disagrees with it, and neutral means the evidence neither supports nor refutes it. We aggregate these pairwise scores into a single document-level consistency score and show that it correlates strongly with human judgments of factual consistency. Our approach requires no task-specific fine-tuning when a sufficiently strong pretrained NLI model is used."
+  },
+  "doc_summac#c2": {
+   "doc_id": "doc_summac",
+   "text": "human judgments of factual consistency. Our approach requires no task-specific fine-tuning when a sufficiently strong pretrained NLI model is used. On the SummaEval and FactCC evaluation sets, sentence-level NLI scoring outperformed embedding-similarity baselines such as BLEU and ROUGE, which measure only surface overlap and fail to detect logically contradictory statements."
+  },
+  "doc_ragtruth#c0": {
+   "doc_id": "doc_ragtruth",
+   "text": "Hallucination detection in RAG systems requires data at a finer granularity than whole-response labels. RAGTruth is a corpus in which annotators marked the exact word-level spans of hallucinated content inside more than eighteen thousand responses generated by retrieval-augmented language models. Each response is paired with the retrieval context that was supplied to the model, so a detector can learn to distinguish content that is supported by the context from content that is merely fluent. The annotation scheme distinguishes fully supported"
+  },
+  "doc_ragtruth#c1": {
+   "doc_id": "doc_ragtruth",
+   "text": "distinguish content that is supported by the context from content that is merely fluent. The annotation scheme distinguishes fully supported statements, unsupported additions, and statements that directly contradict the retrieval context. Analysis of the corpus shows that most hallucinations in RAG outputs are partial: models typically restate the retrieved context correctly and then append an extra detail, a citation to a non-existent source, or an inflated statistic. The corpus was released in 2024 and is now widely used for training"
+  },
+  "doc_ragtruth#c2": {
+   "doc_id": "doc_ragtruth",
+   "text": "a non-existent source, or an inflated statistic. The corpus was released in 2024 and is now widely used for training and evaluating sentence-level and span-level hallucination detectors. Fine-tuning a DeBERTa-based NLI model on the RAGTruth training split produced large gains over the zero-shot baseline in our experiments."
+  },
+  "doc_selfcheck#c0": {
+   "doc_id": "doc_selfcheck",
+   "text": "SelfCheckGPT is a reference-free method for detecting hallucinations that does not require access to a knowledge base. The idea is to sample several independent responses from the same language model for the same question and then measure how consistent the target response is with those samples. If a statement in the target response is factually correct, it tends to reappear across most samples; if it is hallucinated, it is contradicted or omitted in the other samples. Consistency can be measured"
+  },
+  "doc_selfcheck#c1": {
+   "doc_id": "doc_selfcheck",
+   "text": "across most samples; if it is hallucinated, it is contradicted or omitted in the other samples. Consistency can be measured with sentence embeddings, n-gram overlap, or BERTScore. Because the method needs no external documents, it is easy to deploy, but it can only detect inconsistencies with the model's own distribution of beliefs, so systematic errors shared by all samples go undetected. This is an important limitation compared with evidence-based verification, which checks answers against retrieved documents. SelfCheckGPT achieves strong correlation"
+  },
+  "doc_selfcheck#c2": {
+   "doc_id": "doc_selfcheck",
+   "text": "undetected. This is an important limitation compared with evidence-based verification, which checks answers against retrieved documents. SelfCheckGPT achieves strong correlation with human hallucination annotations on the BioDomain and NarrativeQA evaluation sets."
+  },
+  "doc_halueval#c0": {
+   "doc_id": "doc_halueval",
+   "text": "HaluEval is a benchmark dataset for measuring how often and in what ways large language models hallucinate. The benchmark contains tens of thousands of samples covering question answering, dialogue summarization, and knowledge-grounded generation, each labelled as hallucinated or non-hallucinated. Half of the samples were produced by prompting a large language model to deliberately hallucinate, and the other half were collected from human-written responses. We evaluated several detection strategies on HaluEval, including direct prompting of a judge model, embedding similarity against"
+  },
+  "doc_halueval#c1": {
+   "doc_id": "doc_halueval",
+   "text": "from human-written responses. We evaluated several detection strategies on HaluEval, including direct prompting of a judge model, embedding similarity against the source document, and fine-tuned NLI classifiers. Our results show that judge models are inexpensive but over-confident, while fine-tuned classifiers give the best precision. HaluEval also provides a user study showing that readers are frequently unable to identify hallucinations without side-by-side access to the source context. The benchmark is intended as a general-purpose evaluation resource rather than a domain-specific one."
+  },
+  "doc_halueval#c2": {
+   "doc_id": "doc_halueval",
+   "text": "side-by-side access to the source context. The benchmark is intended as a general-purpose evaluation resource rather than a domain-specific one."
+  },
+  "doc_factscore#c0": {
+   "doc_id": "doc_factscore",
+   "text": "FActScore evaluates generation quality by decomposing a long-form response into a list of atomic facts, each expressing exactly one verifiable claim. Every atomic fact is then checked independently against a knowledge source such as Wikipedia, and the fraction of supported facts is reported as the factual precision of the response. This decomposition makes it possible to localise errors to specific sentences instead of scoring the whole document at once. In experiments on biographies of public figures, FActScore found that the"
+  },
+  "doc_factscore#c1": {
+   "doc_id": "doc_factscore",
+   "text": "sentences instead of scoring the whole document at once. In experiments on biographies of public figures, FActScore found that the average factual precision of the largest open models was below eighty percent, with errors concentrated in dates, quantities, and lesser-known affiliations. Atomic-level scoring was also more stable under prompt variation than document-level scoring. The method requires a reliable retrieval step: when the knowledge source lacks the relevant entry, correct statements are wrongly marked as unsupported, which inflates the measured error"
+  },
+  "doc_factscore#c2": {
+   "doc_id": "doc_factscore",
+   "text": "when the knowledge source lacks the relevant entry, correct statements are wrongly marked as unsupported, which inflates the measured error rate. Despite this limitation, atomic fact scoring is now a standard evaluation protocol for long-form generation."
+  },
+  "doc_hhem#c0": {
+   "doc_id": "doc_hhem",
+   "text": "The Hughes Hallucination Evaluation Model (HHEM) is a production-oriented classifier that estimates the probability that a summarization or RAG response is faithful to its source document. HHEM is trained on a large corpus of document-summary pairs labelled for factual consistency and is distributed as an open model that can be run on commodity hardware. In Vectara's evaluation harness, HHEM reports hallucination rates in the range of one to five percent for well-configured summarization pipelines, with higher rates observed when the"
+  },
+  "doc_hhem#c1": {
+   "doc_id": "doc_hhem",
+   "text": "hallucination rates in the range of one to five percent for well-configured summarization pipelines, with higher rates observed when the input document is long or the summary is aggressive. The model scores each response independently of the question, so it measures consistency with the document rather than answer relevance. HHEM is widely used as an industry baseline for comparing new hallucination detectors, and its main limitation is that it produces only a document-level score and does not localise the specific"
+  },
+  "doc_hhem#c2": {
+   "doc_id": "doc_hhem",
+   "text": "hallucination detectors, and its main limitation is that it produces only a document-level score and does not localise the specific sentence responsible for the hallucination."
+  },
+  "doc_medical#c0": {
+   "doc_id": "doc_medical",
+   "text": "Convolutional neural networks have been applied to the interpretation of chest radiographs, retinal fundus images, and histopathology slides with performance approaching that of specialist clinicians in controlled studies. In a multi-centre evaluation of a deep learning system for chest X-ray screening, the reported sensitivity was 94 percent with a specificity of 89 percent on a held-out test set of twelve thousand images. Clinicians using the model as a decision support tool completed case reviews faster than clinicians working without assistance,"
+  },
+  "doc_medical#c1": {
+   "doc_id": "doc_medical",
+   "text": "thousand images. Clinicians using the model as a decision support tool completed case reviews faster than clinicians working without assistance, although the study also documented a risk of automation bias, where readers accepted incorrect model suggestions. Regulatory approval for such systems requires external validation on data from hospitals outside the development site, because performance degrades when imaging protocols differ. The review concludes that imaging models should be deployed only with continuous monitoring for distribution shift, and that any clinical decision"
+  },
+  "doc_medical#c2": {
+   "doc_id": "doc_medical",
+   "text": "review concludes that imaging models should be deployed only with continuous monitoring for distribution shift, and that any clinical decision support answer must cite the study that supports it. All experiments described in this review received institutional ethics approval."
+  }
+ },
+ "documents": {
+  "doc_rag": {
+   "title": "Retrieval-Augmented Generation for Knowledge-Intensive Question Answering",
+   "authors": [
+    "Emily Carter",
+    "Michael Chen",
+    "Laura Bennett"
+   ],
+   "venue": "Proceedings of the International Conference on NLP Systems (ICNLP)",
+   "year": 2020,
+   "scopus_indexed": true
+  },
+  "doc_summac": {
+   "title": "SummaC: Sentence-Level Factual Consistency Detection using Natural Language Inference",
+   "authors": [
+    "David Kim",
+    "Sofia Marino"
+   ],
+   "venue": "Journal of Computational Linguistics (JCL)",
+   "year": 2022,
+   "scopus_indexed": true
+  },
+  "doc_ragtruth": {
+   "title": "RAGTruth: A Span-Level Corpus for Hallucination Detection in Retrieval-Augmented Generation",
+   "authors": [
+    "Priya Nair",
+    "James Wilson",
+    "Hannah Cole"
+   ],
+   "venue": "International Journal of Language Technologies (IJLT)",
+   "year": 2024,
+   "scopus_indexed": true
+  },
+  "doc_selfcheck": {
+   "title": "SelfCheckGPT: Reference-Free Detection of Hallucinations via Sampling Consistency",
+   "authors": [
+    "Alex Turner",
+    "Nora Ellis"
+   ],
+   "venue": "arXiv preprint (not peer reviewed)",
+   "year": 2023,
+   "scopus_indexed": false
+  },
+  "doc_halueval": {
+   "title": "HaluEval: A Large-Scale Benchmark for Evaluating Hallucinations in Large Language Models",
+   "authors": [
+    "Ryan Patel",
+    "Chloe Adams"
+   ],
+   "venue": "Workshop on Trustworthy Machine Learning (WTML)",
+   "year": 2023,
+   "scopus_indexed": false
+  },
+  "doc_factscore": {
+   "title": "FActScore: Fine-Grained Atomic Fact Evaluation of Generated Biographies",
+   "authors": [
+    "John Predatory",
+    "Grace Liu",
+    "Nora Ellis"
+   ],
+   "venue": "International Journal of Unverified AI Research (IJUAR)",
+   "year": 2023,
+   "scopus_indexed": false
+  },
+  "doc_hhem": {
+   "title": "HHEM: The Hughes Hallucination Evaluation Model for Production RAG Systems",
+   "authors": [
+    "Rachel Hughes",
+    "Tom Bradley"
+   ],
+   "venue": "Vectara Technical Report Series",
+   "year": 2024,
+   "scopus_indexed": false
+  },
+  "doc_medical": {
+   "title": "Deep Learning for Automated Diagnosis in Medical Imaging: A Clinical Review",
+   "authors": [
+    "Alan Reed",
+    "Maria Lopez",
+    "Kevin O'Brien"
+   ],
+   "venue": "Journal of Medical Artificial Intelligence (JMAI)",
+   "year": 2022,
+   "scopus_indexed": true
+  }
+ }
+}
